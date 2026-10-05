@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "living_relics:vivianite_sword",
+    "living_relics:warden_sword",
+    "living_relics:elder_guardian_sword",
+    "living_relics:wither_sword"
+  ]
+}

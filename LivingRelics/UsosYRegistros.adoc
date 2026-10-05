@@ -1,0 +1,40 @@
+= Creacion de una nueva reliquia
+
+. crear su item.json en LivingRelics\src\main\resources\assets\living_relics\items
+. crear su model.json en LivingRelics\src\main\resources\assets\living_relics\models\item
+. agregar su traduccion en LivingRelics\src\main\resources\assets\living_relics\lang
+. agregar su textura en LivingRelics\src\main\resources\assets\living_relics\textures\item
+. agregar su java en LivingRelics\src\main\java\living\relics\item\relic
+. inicializarlo en LivingRelics\src\main\java\living\relics\item\ModItems.java
+
+= Creacion de un nuevo bloque
+
+. generar su java en LivingRelics\src\main\java\living\relics\block\material
+. crear su blockstate en LivingRelics\src\main\resources\assets\living_relics\blockstates
+. hacer su item en LivingRelics\src\main\resources\assets\living_relics\items
+. agregar su traduccion
+. agregar su modelo de bloque en LivingRelics\src\main\resources\assets\living_relics\models\block
+. agregar su item en LivingRelics\src\main\resources\assets\living_relics\models\item
+. agregar su textura en LivingRelics\src\main\resources\assets\living_relics\textures\block
+. agregar su loot table(en caso de tener) en LivingRelics\src\main\resources\data\living_relics\loot_table\blocks
+. agregar su minabilidad en LivingRelics\src\main\resources\data\minecraft\tags\block\mineable\pickaxe.json
+. agregar su necesidad de diamond tool en LivingRelics\src\main\resources\data\minecraft\tags\block\needs_diamond_tool.json
+
+
+= Creacion de una nueva herramienta o relic weapon
+
+. crear su WeaponItem.java en LivingRelics\src\main\java\living\relics\item\weapon
+. registrarlo en LivingRelics\src\main\java\living\relics\item\ModItems.java
+. crear su item en LivingRelics\src\main\resources\assets\living_relics\items
+. crea sus lang en LivingRelics\src\main\resources\assets\living_relics\lang
+. crea su modelo en LivingRelics\src\main\resources\assets\living_relics\models\item
+. pon su textura en LivingRelics\src\main\resources\assets\living_relics\textures\item
+. Crea su receta en LivingRelics\src\main\resources\data\living_relics\recipe
+. ponlo dentro de su tipo de tool en LivingRelics\src\main\resources\data\minecraft\tags\item
+
+= Agregar una bossbar a alguna entity, y su loot(entidad de minecraft o del mod)
+
+. crea su bossbar.java en LivingRelics\src\main\java\living\relics\EntityExtensions
+. registra su uso en LivingRelics\src\main\java\living\relics\LivingRelics.java
+
+

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "C",
+    "S"
+  ],
+  "key": {
+    "C": "living_relics:vivianite_crystal",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "living_relics:vivianite_sword",
+    "count": 1
+  }
+}

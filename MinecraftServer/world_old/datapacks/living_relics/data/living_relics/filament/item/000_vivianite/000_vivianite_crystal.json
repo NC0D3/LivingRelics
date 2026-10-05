@@ -1,0 +1,18 @@
+{
+  "id": "living_relics:vivianite_crystal",
+  "translations": {
+    "en_us": "Vivianite Crystal",
+    "es_mx": "Cristal de Vivianita"
+  },
+  "vanillaItem": "minecraft:paper",
+  "itemResource": {
+    "models": {
+      "default": "living_relics:item/vivianite_crystal"
+    }
+  },
+  "behaviour": {
+    "compostable":{
+      "chance": 50
+    }
+  }
+}

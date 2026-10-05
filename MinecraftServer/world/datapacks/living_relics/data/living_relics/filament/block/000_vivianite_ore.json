@@ -1,0 +1,41 @@
+{
+    "id": "living_relics:vivianite_ore",
+    "translations": {
+        "en_us": "Vivianite Ore",
+        "es_mx": "Mineral de Vivianita"
+    },
+    "vanillaItem": "minecraft:paper",
+    "blockTags": [
+        "minecraft:needs_diamond_tool",
+        "minecraft:needs_netherite_tool",
+        "minecraft:mineable/pickaxe"
+    ],
+    "blockResource": {
+        "models": {
+            "default": "living_relics:block/vivianite_ore"
+        }
+    },
+    "blockModelType": "full_block",
+    "itemResource": {
+        "models": {
+            "default": "living_relics:block/vivianite_ore"
+        }
+    },
+    "properties": {
+        "fireResistant": false,
+        "blockBase": "minecraft:deepslate",
+        "requiresTool": true,
+        "explosionResistance": 6,
+        "destroyTime": 6,
+        "isSuffocating": true,
+        "redstoneConductor": true,
+        "lightEmission": 5,
+        "transparent": false,
+        "allowsSpawning": true,
+        "replaceable": false,
+        "collision": true,
+        "solid": true,
+        "showBreakParticles": true,
+        "lootTable": "living_relics:block/vivianite_ore"
+    }
+}

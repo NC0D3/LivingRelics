@@ -1,0 +1,28 @@
+{
+  "id": "living_relics:elder_guardian_eye",
+  "translations": {
+    "en_us": "Elder Guardian Eye",
+    "es_mx": "Ojo del Viejo Guardian"
+  },
+  "vanillaItem": "minecraft:paper",
+  "itemResource": {
+    "models": {
+      "default": "living_relics:item/elder_guardian_eye"
+    }
+  },
+  "components": {
+    "minecraft:item_name": {
+      "translate": "item.living_relics.elder_guardian_eye",
+      "color": "#cfc2a1",
+      "italic": false
+    },
+    "minecraft:lore": [
+      {
+        "text": "RELIC",
+        "color": "#ff00ff",
+        "bold": true,
+        "italic": true
+      }
+    ]
+  }
+}

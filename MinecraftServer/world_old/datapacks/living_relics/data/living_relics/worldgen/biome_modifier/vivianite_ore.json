@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:add_features",
+  "biomes": [
+    "minecraft:lush_caves"
+  ],
+  "features": [
+    "living_relics:vivianite_ore"
+  ],
+  "step": "underground_ores"
+}

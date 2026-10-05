@@ -1,0 +1,58 @@
+{
+  "id": "living_relics:vivianite_axe",
+  "translations": {
+    "en_us": "Vivianite Axe",
+    "es_mx": "Hacha de Vivianita"
+  },
+  "vanillaItem": "minecraft:netherite_axe",
+  "itemTags": ["minecraft:axes","minecraft:axe_enchantable"],
+  "itemResource": {
+    "models": {
+      "default": "living_relics:item/vivianite_axe"
+    }
+  },
+  "components": {
+    "minecraft:max_damage": 2500,
+    "minecraft:damage": 0,
+    "minecraft:max_stack_size": 1,
+    "minecraft:rarity": "common",
+    "minecraft:enchantable": {
+      "value": 14
+    },
+    "minecraft:tool": {
+      "can_destroy_blocks_in_creative": false,
+      "damage_per_block": 1,
+      "rules": [
+        {
+          "blocks": "#minecraft:mineable/axe",
+          "correct_for_drops": true,
+          "speed": 8
+        }
+      ]
+    },
+    "minecraft:weapon": {
+      "item_damage_per_attack": 1
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:attack_damage",
+        "amount": 12,
+        "id": "minecraft:base_attack_damage",
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "type": "minecraft:attack_speed",
+        "amount": -3.0,
+        "id": "minecraft:base_attack_speed",
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ],
+    "minecraft:repairable": {
+      "items": [
+        "living_relics:vivianite_crystal"
+      ]
+    }
+  }
+}

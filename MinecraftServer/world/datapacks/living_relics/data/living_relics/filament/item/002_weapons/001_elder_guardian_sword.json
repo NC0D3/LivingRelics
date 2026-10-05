@@ -1,0 +1,80 @@
+{
+  "id": "living_relics:elder_guardian_sword",
+  "translations": {
+    "en_us": "Elder Guardian Sword",
+    "es_mx": "Espada del Viejo Guardian"
+  },
+  "vanillaItem": "minecraft:netherite_sword",
+  "itemTags": ["minecraft:swords","minecraft:sword_enchantable"],
+  "itemResource": {
+    "models": {
+      "default": "living_relics:item/elder_guardian_sword"
+    }
+  },
+  "components": {
+    "minecraft:item_name": {
+      "translate": "item.living_relics.elder_guardian_sword",
+      "color": "#cfc2a1",
+      "italic": false,
+      "bold":true
+    },
+    "minecraft:lore": [
+      {
+        "text": "RELIC WEAPON",
+        "color": "#00ffff",
+        "bold": true,
+        "italic": true
+      }
+    ],
+    "minecraft:max_damage": 2500,
+    "minecraft:damage": 0,
+    "minecraft:rarity": "common",
+    "minecraft:max_stack_size": 1,
+    "minecraft:enchantable": {
+      "value": 14
+    },
+    "minecraft:tool": {
+      "can_destroy_blocks_in_creative": false,
+      "damage_per_block": 2,
+      "rules": [
+        {
+          "blocks": "minecraft:cobweb",
+          "correct_for_drops": true,
+          "speed": 15
+        },
+        {
+          "blocks": "#minecraft:sword_instantly_mines",
+          "speed": 3.4028235e+38
+        },
+        {
+          "blocks": "#minecraft:sword_efficient",
+          "speed": 1.5
+        }
+      ]
+    },
+    "minecraft:weapon": {
+      "item_damage_per_attack": 1
+    },
+    "minecraft:attribute_modifiers": [
+        {
+            "type": "minecraft:attack_damage",
+            "amount": 12,
+            "id": "minecraft:base_attack_damage",
+            "operation": "add_value",
+            "slot": "mainhand"
+        },
+        {
+            "type": "minecraft:attack_speed",
+            "amount": -3.0,
+            "id": "minecraft:base_attack_speed",
+            "operation": "add_value",
+            "slot": "mainhand"
+        }
+    ],
+    "minecraft:repairable": {
+        "items": [
+            "living_relics:vivianite_crystal"
+        ]
+    }
+  }
+}

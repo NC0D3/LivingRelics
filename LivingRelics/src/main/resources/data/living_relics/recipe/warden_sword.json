@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "living_relics:warden_core",
+  "base": "living_relics:vivianite_sword",
+  "addition": "minecraft:nether_star",
+  "result": {
+    "id": "living_relics:warden_sword"
+  }
+}

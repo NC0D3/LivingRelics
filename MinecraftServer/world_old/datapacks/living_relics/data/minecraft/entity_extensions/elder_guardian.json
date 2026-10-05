@@ -1,0 +1,11 @@
+{
+    "entity":"minecraft:elder_guardian",
+    "type":"MINIBOSS",
+
+    "boss_bar":{
+        "enabled":true,
+        "name":"Elder Guardian",
+        "name_color":"#b3ad8d",
+        "style":"PROGRESS"
+    }
+}

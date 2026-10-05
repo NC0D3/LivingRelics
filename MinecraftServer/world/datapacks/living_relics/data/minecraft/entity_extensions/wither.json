@@ -1,0 +1,12 @@
+{
+    "entity": "minecraft:wither",
+    "type": "MINIBOSS",
+    "loot": {
+        "drops": [
+            {
+                "item": "living_relics:wither_skull",
+                "chance": 0.05
+            }
+        ]
+    }
+}

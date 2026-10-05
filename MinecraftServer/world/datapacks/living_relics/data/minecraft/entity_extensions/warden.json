@@ -1,0 +1,19 @@
+{
+    "entity": "minecraft:warden",
+    "type": "MINIBOSS",
+    "boss_bar": {
+        "enabled": true,
+        "name": "Warden",
+        "name_color": "#79edd0",
+        "style": "progress"
+    },
+
+    "loot": {
+        "drops": [
+            {
+                "item": "living_relics:warden_core",
+                "chance": 0.05
+            }
+        ]
+    }
+}

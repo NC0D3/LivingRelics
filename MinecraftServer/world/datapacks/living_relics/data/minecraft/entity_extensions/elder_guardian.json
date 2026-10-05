@@ -1,0 +1,18 @@
+{
+    "entity":"minecraft:elder_guardian",
+    "type":"MINIBOSS",
+    "boss_bar":{
+        "enabled":true,
+        "name":"Elder Guardian",
+        "name_color":"#cfc2a1",
+        "style":"PROGRESS"
+    },
+    "loot": {
+        "drops": [
+            {
+                "item": "living_relics:elder_guardian_eye",
+                "chance": 0.025
+            }
+        ]
+    }
+}

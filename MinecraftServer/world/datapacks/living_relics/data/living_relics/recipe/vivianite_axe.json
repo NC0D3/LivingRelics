@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "VV",
+    "VS",
+    " S"
+  ],
+  "key": {
+    "V": "living_relics:vivianite_crystal",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "living_relics:vivianite_axe",
+    "count": 1
+  }
+}

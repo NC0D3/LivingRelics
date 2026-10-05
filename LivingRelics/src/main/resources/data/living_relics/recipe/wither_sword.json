@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "living_relics:wither_skull",
+  "base": "living_relics:vivianite_sword",
+  "addition": "minecraft:nether_star",
+  "result": {
+    "id": "living_relics:wither_sword"
+  }
+}

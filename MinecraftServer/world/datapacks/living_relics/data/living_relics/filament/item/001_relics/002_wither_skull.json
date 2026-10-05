@@ -1,0 +1,28 @@
+{
+  "id": "living_relics:wither_skull",
+  "translations": {
+    "en_us": "Wither Skull",
+    "es_mx": "Craneo de Whither"
+  },
+  "vanillaItem": "minecraft:paper",
+  "itemResource": {
+    "models": {
+      "default": "living_relics:item/wither_skull"
+    }
+  },
+  "components": {
+    "minecraft:item_name": {
+      "translate": "item.living_relics.wither_skull",
+      "color": "#575757",
+      "italic": false
+    },
+    "minecraft:lore": [
+      {
+        "text": "RELIC",
+        "color": "#ff00ff",
+        "bold": true,
+        "italic": true
+      }
+    ]
+  }
+}

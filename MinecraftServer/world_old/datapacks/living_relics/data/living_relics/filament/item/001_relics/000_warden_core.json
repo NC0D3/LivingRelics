@@ -1,0 +1,28 @@
+{
+  "id": "living_relics:warden_core",
+  "translations": {
+    "en_us": "Warden Core",
+    "es_mx": "Núcleo de Warden"
+  },
+  "vanillaItem": "minecraft:paper",
+  "itemResource": {
+    "models": {
+      "default": "living_relics:item/warden_core"
+    }
+  },
+  "components": {
+    "minecraft:item_name": {
+      "translate": "item.living_relics.warden_core",
+      "color": "#ff66cc",
+      "italic": false
+    },
+    "minecraft:lore": [
+      {
+        "text": "RELIC",
+        "color": "#ff00ff",
+        "bold": true,
+        "italic": true
+      }
+    ]
+  }
+}

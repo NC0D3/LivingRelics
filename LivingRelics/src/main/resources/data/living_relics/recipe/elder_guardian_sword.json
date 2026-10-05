@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "living_relics:elder_guardian_eye",
+  "base": "living_relics:vivianite_sword",
+  "addition": "minecraft:nether_star",
+  "result": {
+    "id": "living_relics:elder_guardian_sword"
+  }
+}

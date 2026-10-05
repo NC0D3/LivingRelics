@@ -1,0 +1,211 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 2026-08-02 21:07:48
+Description: Ticking entity
+
+java.lang.NullPointerException: Cannot invoke "de.tomalbrc.bil.core.model.Model.animations()" because "this.model" is null
+	at knot//de.tomalbrc.bil.core.component.AnimationComponent.playAnimation(AnimationComponent.java:64)
+	at knot//de.tomalbrc.bil.api.Animator.playAnimation(Animator.java:35)
+	at knot//de.tomalbrc.bil.api.Animator.playAnimation(Animator.java:32)
+	at knot//de.tomalbrc.filament.entity.AnimationHelper.updateWalkAnimation(AnimationHelper.java:16)
+	at knot//de.tomalbrc.filament.entity.AnimatedFilamentMob.tick(AnimatedFilamentMob.java:34)
+	at knot//net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:851)
+	at knot//net.minecraft.world.level.Level.guardEntityTick(Level.java:493)
+	at knot//net.minecraft.server.level.ServerLevel.lambda$tick$0(ServerLevel.java:448)
+	at knot//net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53)
+	at knot//net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:418)
+	at knot//net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1137)
+	at knot//net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1001)
+	at knot//net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:278)
+	at knot//net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1034)
+	at knot//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:773)
+	at knot//net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at knot//de.tomalbrc.bil.core.component.AnimationComponent.playAnimation(AnimationComponent.java:64)
+	at knot//de.tomalbrc.bil.api.Animator.playAnimation(Animator.java:35)
+	at knot//de.tomalbrc.bil.api.Animator.playAnimation(Animator.java:32)
+	at knot//de.tomalbrc.filament.entity.AnimationHelper.updateWalkAnimation(AnimationHelper.java:16)
+	at knot//de.tomalbrc.filament.entity.AnimatedFilamentMob.tick(AnimatedFilamentMob.java:34)
+	at knot//net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:851)
+	at knot//net.minecraft.world.level.Level.guardEntityTick(Level.java:493)
+	at knot//net.minecraft.server.level.ServerLevel.lambda$tick$0(ServerLevel.java:448)
+	at knot//net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53)
+
+-- Entity being ticked --
+Details:
+	Entity Type: living_relics:jellyfish (de.tomalbrc.filament.entity.AnimatedFilamentMob)
+	Entity ID: 3
+	Entity Name: entity.living_relics.jellyfish
+	Entity's Exact location: 419.42, 71.00, 1208.80
+	Entity's Block location: World: (419,71,1208), Section: (at 3,7,8 in 26,4,75; chunk contains blocks 416,-64,1200 to 431,319,1215), Region: (0,2; contains chunks 0,64 to 31,95, blocks 0,-64,1024 to 511,319,1535)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at knot//net.minecraft.world.level.Level.guardEntityTick(Level.java:493)
+	at knot//net.minecraft.server.level.ServerLevel.lambda$tick$0(ServerLevel.java:448)
+	at knot//net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53)
+	at knot//net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:418)
+	at knot//net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1137)
+	at knot//net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1001)
+	at knot//net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:278)
+	at knot//net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1034)
+	at knot//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:773)
+	at knot//net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- Affected level --
+Details:
+	All players: 1 total; ServerPlayer{name=enc0d3, id=83, pos=(419.423123256977, 71.0, 1208.7964083993354), mode=CREATIVE, permission=owner}
+	Chunk stats: 841
+	Level dimension: minecraft:overworld
+	Level time: 1055257 game time, 714000 day time
+	Level spawn location: World: (-144,71,80), Section: (at 0,7,0 in -9,4,5; chunk contains blocks -144,-64,80 to -129,319,95), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Level name: world
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Commands: false
+	Known server brands: fabric
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 81
+	Server weather: Rain time: 84465 (now: false), thunder time: 10349 (now: false)
+Stacktrace:
+	at knot//net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:1872)
+	at knot//net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1140)
+	at knot//net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1001)
+	at knot//net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:278)
+	at knot//net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1034)
+	at knot//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:773)
+	at knot//net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- System Details --
+Details:
+	Minecraft Version: 26.2
+	Minecraft Version ID: 26.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 25.0.3, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 126232648 bytes (120 MiB) / 377487360 bytes (360 MiB) up to 2147483648 bytes (2048 MiB)
+	Memory (heap): init: 244MiB, used: 238MiB, committed: 360MiB, max: 2048MiB
+	Memory (non-head): init: 007MiB, used: 172MiB, committed: 174MiB, max: 000MiB
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 7735HS with Radeon Graphics        
+	Identifier: AuthenticAMD Family 25 Model 68 Stepping 1
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.19
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 4050 Laptop GPU
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 6141.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.8097
+	Graphics card #1 name: AMD Radeon(TM) Graphics
+	Graphics card #1 vendor: Advanced Micro Devices, Inc.
+	Graphics card #1 VRAM (MiB): 512.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 31.0.14001.54001
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: DDR5
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: DDR5
+	Virtual memory max (MiB): 35027.61
+	Virtual memory used (MiB): 30965.34
+	Swap memory total (MiB): 19456.00
+	Swap memory used (MiB): 2672.64
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 135049.25, total: 464316.00
+	Space in storage for workdir (MiB): available: 26367.48, total: 953853.00
+	Operating System Version: Microsoft Windows 11 (Home) build 26200
+	Process Elevated: false
+	Process Loads: Uptime: 18s, user: 53s (303.44%), kernel: 5s (28.80%), total: 58s (332.24%)
+	Process Virtual Size (MiB): 4063.26
+	Process Resident Size (MiB): 648.06
+	JVM Flags: 1 total; -Xmx2G
+	Debug Flags: 0 total; 
+	Fabric Mods: 
+		fabric-api: Fabric API 0.155.2+26.2
+			fabric-api-base: Fabric API Base 2.0.4+ece063239e
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 2.0.17+11e1c9a39e
+			fabric-biome-api-v1: Fabric Biome API (v1) 18.0.6+c7bd5b8e9e
+			fabric-block-api-v1: Fabric Block API (v1) 3.0.3+ec56b6019e
+			fabric-block-getter-api-v2: Fabric BlockGetter API (v2) 2.0.7+ec56b6019e
+			fabric-command-api-v2: Fabric Command API (v2) 3.1.0+00cb03469e
+			fabric-content-registries-v0: Fabric Content Registries (v0) 11.3.0+d0a699d09e
+			fabric-convention-tags-v2: Fabric Convention Tags (v2) 4.7.0+1f023a9e9e
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 1.0.5+086d547a9e
+			fabric-creative-tab-api-v1: Fabric Creative Tab API (v1) 5.0.14+d871b99e9e
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 2.2.17+aa0fd6fe9e
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 25.4.5+b190d6f59e
+			fabric-debug-api-v1: Fabric Debug API (v1) 1.0.2+c792624d9e
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 5.1.10+5ed499069e
+			fabric-entity-events-v1: Fabric Entity Events (v1) 5.0.5+06488ac19e
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 5.2.6+8f57f7ee9e
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 4.0.8+46a6d00c9e
+			fabric-item-api-v1: Fabric Item API (v1) 14.3.0+583e0a5f9e
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 4.1.3+4575b05f9e
+			fabric-loot-api-v3: Fabric Loot API (v3) 3.0.17+06488ac19e
+			fabric-menu-api-v1: Fabric Menu API (v1) 2.0.16+086d547a9e
+			fabric-message-api-v1: Fabric Message API (v1) 7.0.7+086d547a9e
+			fabric-networking-api-v1: Fabric Networking API (v1) 6.3.3+72073ef09e
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 24.1.0+6fcd5f039e
+			fabric-particles-v1: Fabric Particles (v1) 5.0.18+d1756aa99e
+			fabric-permission-api-v1: Fabric Permission API (v1) 1.0.3+b7020ca29e
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 9.0.20+11e1c9a39e
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 7.1.0+c7bd5b8e9e
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 6.0.4+06488ac19e
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 6.1.0+10e9a28b9e
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 3.3.20+4fc5413f9e
+			fabric-resource-loader-v1: Fabric Resource Loader (v1) 2.0.13+9edec1269e
+			fabric-serialization-api-v1: Fabric Serialization API (v1) 2.0.4+11a26f319e
+			fabric-tag-api-v1: Fabric Tag API (v1) 2.1.3+794df31d9e
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 8.0.11+39b5a3929e
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 8.1.4+67c847259e
+		fabricloader: Fabric Loader 0.19.3
+			mixinextras: MixinExtras 0.5.4
+		filament: filament 1.7.3+26.2
+			bil: blockbench-import-library 2.0.7+26.2
+			common-protection-api: Common Protection API 2.0.0
+			fabric-permissions-api-v0: fabric-permissions-api 0.7.0
+			placeholder-api: Placeholder API 3.1.0-beta.1+26.2
+			sgui: sgui 2.1.0+26.2
+		java: OpenJDK 64-Bit Server VM 25
+		living_relics_engine: Living Relics Engine 1.4.0
+		minecraft: Minecraft 26.2
+		polymer-bundled: Polymer 0.17.3+26.2
+			polymer-autohost: Polymer (Auto Host) 0.17.3+26.2
+			polymer-blocks: Polymer (Textured Blocks) 0.17.3+26.2
+			polymer-common: Polymer (Common) 0.17.3+26.2
+			polymer-core: Polymer (Core) 0.17.3+26.2
+				polymer-networking: Polymer (Networking) 0.17.3+26.2
+				polymer-registry-sync-manipulator: Polymer (Registry Sync Manipulator) 0.17.3+26.2
+			polymer-resource-pack: Polymer (Resource Pack) 0.17.3+26.2
+			polymer-resource-pack-extras: Polymer (Resource Pack Extras) 0.17.3+26.2
+			polymer-sound-patcher: Polymer (Sound Patcher) 0.17.3+26.2
+			polymer-virtual-entity: Polymer (Virtual Entity) 0.17.3+26.2
+	Server Running: true
+	Player Count: 1 / 20; [ServerPlayer['enc0d3'/83, l='ServerLevel[world]', x=419.42, y=71.00, z=1208.80]]
+	Active Data Packs: vanilla, fabric-convention-tags-v2, filament, living_relics_engine, file/living_relics (incompatible)
+	Available Data Packs: fabric-convention-tags-v2, filament, file/living_relics (incompatible), living_relics_engine, minecart_improvements, redstone_experiments, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 7750901984477040349
+	Suppressed Exceptions: ~~NONE~~
+	Is Modded: Definitely; Server brand changed to 'fabric'
+	Type: Dedicated Server
